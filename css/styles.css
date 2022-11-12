@@ -118,7 +118,7 @@ img {
     height: 4px;
     border-radius: 2px;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     background-color: var(--accent-color);
 }
@@ -349,15 +349,16 @@ img {
 
 .our-work-text {
     position: absolute;
-    display: inline-block;
+    display: flex;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 
-    padding: 27px 0;
+    height: 70px;
     width: 100%;
     margin: 0;
     bottom: 0;
@@ -564,10 +565,16 @@ img {
 }
 
 .come-in {
-    color: #FFFFFF;
-    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
     margin-top: 0;
     margin-bottom: 20px;
+
+    color: #FFFFFF;
 }
 
 .footer-social-list {
